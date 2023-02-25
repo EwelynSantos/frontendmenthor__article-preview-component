@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Article preview component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <img id="casa" src="images/drawers.jpg" alt="casa">
+    <section id="card1">
+      <div id="card2">
+        <h1>
+          Shift the overall look and feel by adding these wonderful
+          touches to furniture in your home
+        </h1>
+        <p>Ever been in a room and felt like something was missing? </p>
+        <p>Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel
+          complete.</p>
+      </div>
+      <div id="share">
+        <div id="usuario">
+          <img id="mulher" src="images/avatar-michelle.jpg" alt="usuario">
+          <ul>
+            <li id="nome">Michelle Appleton</li>
+            <li id="data">28 Jun 2020</li>
+          </ul>
+        </div>
+        <div id="card3" onmouseover="share()" onmouseout="sair()" >
+          <div id="icones">
+            <p>SHARE</p>
+            <img src="images/icon-facebook.svg" alt="facebook">
+            <img src="images/icon-twitter.svg" alt="twiter">
+            <img src="images/icon-pinterest.svg" alt="pinterest">
+            <div id="icon-mobile" onclick="fechar()"><img id="seta-mob" src="images/icon-share.svg" alt="compartilhar"></div>
+          </div>
+          <div id="icon"  onclick="clicou()"><img id="seta" src="images/icon-share.svg" alt="compartilhar"></div>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/EwelynSantos" target="_blank">EwelynSantos</a>.
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
